@@ -3,26 +3,16 @@
 #include <time.h>
 
 /**
- * main - Positive or Negative - print sign of random number
- * @void: Empty parameter list for main.
+ * main - checks if positive, zero or negative
  *
- * Description: this if/else statement delares the sign (positive
- * or negative) of a random number. It also states if the value
- * is zero.
- *
- * Return: 0 for success
+ * Return: zero
  */
 int main(void)
 {
-	/**
-	 * variable n has been declared
-	 * coding then assigns the random value.
-	 */
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
@@ -36,3 +26,4 @@ int main(void)
 		printf("%d is negative\n", n);
 	}
 	return (0);
+}
