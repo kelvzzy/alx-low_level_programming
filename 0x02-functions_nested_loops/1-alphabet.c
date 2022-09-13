@@ -2,9 +2,10 @@
 
 /**
  * print_alphabet -> prints the lowercase alphabets
+ * Return: Nothing.
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	int j;
 
