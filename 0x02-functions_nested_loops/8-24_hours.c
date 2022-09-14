@@ -33,7 +33,7 @@ void jack_bauer(void)
 		}
 		if (b > 9)
 		{
-			c = 0;
+			b = 0;
 			a++;
 		}
 		x++;
