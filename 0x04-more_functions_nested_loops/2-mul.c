@@ -1,15 +1,15 @@
 #include"main.h"
 /**
-* print_numbers - prints the numbers
-*
-*/
-voidprint_numbers(void)
+ * mul - returns result of multiplication between 2 integers
+ *@a: first multiplier
+ *@b: second multiplier
+ *
+ * Return: multiplication result
+ */
+int mul(int a, int b)
 {
-int i;
+	int result;
 
-for (i = '0'; i <= '9'; i++)
-{
-_putchar(i);
-}
-_putchar('\n');
+	result = a * b;
+	return (result);
 }
