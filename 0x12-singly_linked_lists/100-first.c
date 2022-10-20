@@ -1,24 +1,10 @@
-#include "lists.h"
+#include <stdio.h>
 /**
-  * reverse_listint - reverses a listint_t.
-  * @head: pointer to pointer of first list element.
-  *
-  * Return: pointer to first node of reversed list.
-  */
-listint_t *reverse_listint(listint_t **head)
+ * bmain - function executed before main
+ * Return: no return.
+ */
+void __attribute__((constructor)) bmain()
 {
-	listint_t *temp, *current;
-
-	temp = NULL;
-	current = NULL;
-	while (*head != NULL)
-	{
-		current = *head;
-		*head = (*head)->next;
-		current->next = temp;
-		temp = current;
-	}
-	*head = current;
-
-	return (*head);
+	printf("You're beat! and yet, you must allow");
+	printf(",\nI bore my house upon my back!\n");
 }
